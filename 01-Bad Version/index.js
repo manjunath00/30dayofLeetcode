@@ -18,6 +18,11 @@ var solution = function (isBadVersion) {
    * @return {integer} The first bad version
    */
   return function (n) {
+    /**
+     *
+     * @param {integer} start
+     * @param {integer} end
+     */
     let recursive = function (start, end) {
       if (start > end) return start;
       let mid = Math.floor((start + end) / 2);
